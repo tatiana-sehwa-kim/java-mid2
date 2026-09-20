@@ -22,8 +22,8 @@ public class BoxMain2 {
 
         // 잘못된 타입의 인수 전달시
         integerBox.set("문자100");
-        Integer result = integerBox.get();  // String -> Integer 캐스팅 예외. 타입다르자나 하고 예외 터짐
-        System.out.println("result = " + result);
+//        Integer result = integerBox.get();  // String -> Integer 캐스팅 예외. 타입다르자나 하고 예외 터짐
+//        System.out.println("result = " + result);
 
     }
 }
