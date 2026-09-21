@@ -10,8 +10,9 @@ public class ListEx1 {
         // 다음 코드와 실행 결과를 참고해서 리스트를 사용하는 ListEx1 클래스를 만들어라.
 
         List<Integer> students = new ArrayList<> (List.of (90,80,70,60,50) );
-//        students.add(90);
-//        students.add(80);     // 어쩌구를 저걸 맨위에 한줄로 쓸수있다.
+
+//        students.add(90);     // 어쩌구를 저걸 맨위에 한줄로 쓸수있다. 추가삭제도 가능함.
+//        students.add(80);     // 근데 List<Integer> students = List.of(90, 80, 70, 60, 50); 라고 쓰면 고정값으로 끝남. 추가삭제 불가능.
 
         int total = 0;
         for (Integer student : students) {
