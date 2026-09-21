@@ -11,10 +11,7 @@ public class ListEx1 {
 
         List<Integer> students = new ArrayList<> (List.of (90,80,70,60,50) );
 //        students.add(90);
-//        students.add(80);     // 저걸 맨위에 한줄로 쓸수있다.
-//        students.add(70);
-//        students.add(60);
-//        students.add(50);
+//        students.add(80);     // 어쩌구를 저걸 맨위에 한줄로 쓸수있다.
 
         int total = 0;
         for (Integer student : students) {
