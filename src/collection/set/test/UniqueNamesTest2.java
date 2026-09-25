@@ -24,4 +24,4 @@ public class UniqueNamesTest2 {
 
 //        리스트 생성하기
 //        List<Integer> list1 = Arrays.asList(1, 2, 3); (구버전)
-//        List<Integer> list2 = List.of(1, 2, 3);       (권장)
+//        List<Integer> list2 = List.of(1, 2, 3);       (신버전 권장)
