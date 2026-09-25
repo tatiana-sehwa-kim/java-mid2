@@ -22,7 +22,7 @@ public class MapMain1 {
         System.out.println("result = " + result);       // result = 100 (자바의 Integer 클래스는 자신의 숫자 값 자체를 해시코드로 반환하도록 만들어져 있기 때문)
 
         System.out.println("KeySet 활용");               // 키만 필요할때: .keyset(); + iter
-        Set<String> keySet = studentMap.keySet();       // 키들을 반환. Set 자료구조로 반환 (중복 X 순서보장 X)
+        Set<String> keySet = studentMap.keySet();       // 키들을 반환. Set 자료구조로 반환 (중복 X 순서보장 X )
         for (String key : keySet) {
             Integer value = studentMap.get(key);
             System.out.println("key = " + key + ", value = " + value);
