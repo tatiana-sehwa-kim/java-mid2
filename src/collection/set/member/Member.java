@@ -2,7 +2,7 @@ package collection.set.member;
 
 import java.util.Objects;
 
-public class Member {
+public class Member {                                   // equals()와 hashCode() 둘다 재정의 했을 때
     private String id;
 
     public Member(String id) {
