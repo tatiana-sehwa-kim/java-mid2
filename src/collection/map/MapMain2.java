@@ -16,7 +16,7 @@ public class MapMain2 {
         System.out.println(studentMap);     // {studentA=100}
 
         boolean containsKey = studentMap.containsKey("studentA");   // 키가 있냐
-        System.out.println("containsKey = " + containsKey);     // containsKey = true
+        System.out.println("containsKey = " + containsKey);         // containsKey = true
 
         // 특정 학생의 값 삭제
         studentMap.remove("studentA");
