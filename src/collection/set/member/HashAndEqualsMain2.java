@@ -16,8 +16,8 @@ public class HashAndEqualsMain2 {
         System.out.println("System.identityHashCode(m1) = " + System.identityHashCode(m1));         // System.identityHashCode(m1) = 2061475679 인스턴스 주소가 다름
         System.out.println("System.identityHashCode(m2) = " + System.identityHashCode(m2));         // System.identityHashCode(m2) = 140435067
 
-        set.add(m1);        // 저장
-        set.add(m2);        // 저장
+        set.add(m1);        // 저장됨
+        set.add(m2);        // 저장됨
         System.out.println(set);        // MyHashSetV2{buckets=[[], [], [], [], [], [MemberOnlyHash{id='A'}, MemberOnlyHash{id='A'}], [], [], [], []], size=2, capacity=10}
 
         // 검색 실패

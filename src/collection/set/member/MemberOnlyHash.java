@@ -2,7 +2,7 @@ package collection.set.member;
 
 import java.util.Objects;
 
-public class MemberOnlyHash {
+public class MemberOnlyHash {                        // hashCode() 만 재정의 했을 때
 
     private String id;
 
