@@ -2,7 +2,7 @@ package collection.set;
 
 import java.util.Arrays;                                          // HashSet:  추가(add), 검색(contains), 삭제(remove)를 모두
 import java.util.LinkedList;                                      // O(1)(즉시)의 속도로 끝내기 위해 고안된 자료구조
-                                                                  // 대신 치르는 대가 ① 순서를 포기 ② 메모리를 더 소비
+                                                                  // 대신 치르는 대가 1. 순서를 포기 2. 메모리를 더 소비
 public class MyHashSetV2 {
 
     static final int DEFAULT_INITIAL_CAPACITY = 16;
@@ -12,11 +12,11 @@ public class MyHashSetV2 {
     private int size = 0;
     private int capacity = DEFAULT_INITIAL_CAPACITY;
 
-    public MyHashSetV2() {                            // ① 첫 번째 생성자: 기본 옵션 (아무것도 안 정했을 때)
+    public MyHashSetV2() {                            // 1. 첫 번째 생성자: 기본 옵션 (아무것도 안 정했을 때)
         initBuckets();                                  //   사용 예시: MyHashSetV2 set = new MyHashSetV2();
     }                                                   //   "기본으로 세팅된 값(DEFAULT_INITIAL_CAPACITY = 16칸)으로 사물함 만들어줘."
 
-    public MyHashSetV2(int capacity) {                // ② 두 번째 생성자: 사용자 지정 옵션 (크기를 직접 정하고 싶을 때)
+    public MyHashSetV2(int capacity) {                // 2. 두 번째 생성자: 사용자 지정 옵션 (크기를 직접 정하고 싶을 때)
         this.capacity = capacity;                       //   사용 예시: MyHashSetV2 set = new MyHashSetV2(10);
         initBuckets();                                  //   "처음부터 10칸짜리 사물함으로 만들어줘."
     }
@@ -29,9 +29,9 @@ public class MyHashSetV2 {
     }
 
     public boolean add(Object value) {                      // int -> Object
-        int hashIndex = hashIndex(value);                                            // ① 방 번호 계산 (예: 3번 방)
-        LinkedList<Object> bucket = buckets[hashIndex];     // Integer -> Object     // ② 3번 칸에 꽂혀있는 비닐봉지를 손으로 집어 듦
-        if (bucket.contains(value)) {                                                // ③ 그 봉지 안에 이미 있나 검사
+        int hashIndex = hashIndex(value);                                            // 1. 방 번호 계산 (예: 3번 방)
+        LinkedList<Object> bucket = buckets[hashIndex];     // Integer -> Object     // 2. 3번 칸에 꽂혀있는 비닐봉지를 손으로 집어 듦
+        if (bucket.contains(value)) {                                                // 3. 그 봉지 안에 이미 있나 검사
             return false;
         }
         bucket.add(value);                                                           // ④ 그 봉지 안에 쏙 집어넣음
