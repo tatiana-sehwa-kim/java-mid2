@@ -28,13 +28,13 @@ public class MyHashSetV2 {
         }
     }
 
-    public boolean add(Object value) {                      // int -> Object 이기 때문에 세상 모든 타입을 받을수있는 MyHashSet 가 된다.
-        int hashIndex = hashIndex(value);
-        LinkedList<Object> bucket = buckets[hashIndex];     // Integer -> Object
-        if (bucket.contains(value)) {
+    public boolean add(Object value) {                      // int -> Object
+        int hashIndex = hashIndex(value);                                            // 1. 방 번호 계산 (예: 3번 방)
+        LinkedList<Object> bucket = buckets[hashIndex];     // Integer -> Object     // 2. 3번 칸에 꽂혀있는 비닐봉지를 손으로 집어 듦
+        if (bucket.contains(value)) {                                                // 3. 그 봉지 안에 이미 있나 검사
             return false;
         }
-        bucket.add(value);
+        bucket.add(value);                                                           // 4. 그 봉지 안에 쏙 집어넣음
         size ++;
         return true;
     }
