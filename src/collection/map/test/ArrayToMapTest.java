@@ -1,8 +1,6 @@
 package collection.map.test;
 
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 
 public class ArrayToMapTest {
     public static void main(String[] args) {
@@ -11,14 +9,19 @@ public class ArrayToMapTest {
             // 주어진 배열로부터 Map 생성 - 코드 작성
             // Map의 모든 데이터 출력  - 코드 작성
 
-        HashMap<String, Integer> set = new HashMap<>();
+        HashMap<String, Integer> productMap = new HashMap<>();
+
+
         for (String[] product : productArr) {
-            set.put(product[0], Integer.valueOf(product[1]));
+            productMap.put(product[0], Integer.valueOf(product[1]));    // 문자 -> 숫자 후 변수합치기 Ctrl Al N
         }
 
-        for (String key : set.keySet()) {
-            System.out.println("제품: " + key + ", 가격: " + set.get(key));
+        for (String key : productMap.keySet()) {
+            System.out.println("제품: " + key + ", 가격: " + productMap.get(key));
         }
     } 
 }
 
+//    제품: Java, 가격: 10000
+//    제품: JPA, 가격: 30000
+//    제품: Spring, 가격: 20000
