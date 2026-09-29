@@ -9,16 +9,17 @@ public class CommonKeyValueSum1 {
         // map1 과 map2 에 공통으로 들어있는 키를 찾고, 그 값의 합을 구해라.
 
         Map<String, Integer> map1 = Map.of("A", 1, "B", 2, "C", 3); // 한방에 만드는벜 키 값 키 값 입력
+        Map<String, Integer> map2 = Map.of("B", 4, "C", 5, "D", 6);
 
 //        HashMap<String, Integer> map1 = new HashMap<>();
 //        map1.put("A", 1);
 //        map1.put("B", 2);
 //        map1.put("C", 3);
 
-        HashMap<String, Integer> map2 = new HashMap<>();
-        map2.put("B", 4);
-        map2.put("C", 5);
-        map2.put("D", 6);
+//        HashMap<String, Integer> map2 = new HashMap<>();
+//        map2.put("B", 4);
+//        map2.put("C", 5);
+//        map2.put("D", 6);
 
 
         HashMap<String, Integer> result = new HashMap<>();
